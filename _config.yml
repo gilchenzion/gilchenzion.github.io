@@ -7,9 +7,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Co-Organizer for the NYJavascript Meetup.
   NY Tech Advocate.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://gilchen-zion.com" # the base hostname & protocol for your site
+url: "http://www.gilchen-zion.com" # the base hostname & protocol for your site
 twitter_username: gilcz2
 github_username:  gilchenzion
+analytics : "UA-66633509-1"
 
 # Build settings
 markdown: kramdown
