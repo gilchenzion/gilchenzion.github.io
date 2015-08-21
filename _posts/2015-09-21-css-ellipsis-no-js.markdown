@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Add Ellipsis to a Webpage with only CSS"
+title:  "Add Ellipsis To Text With Only CSS"
 date:   2015-09-21 00:17:28
 categories: life
 ---
