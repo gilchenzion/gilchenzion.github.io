@@ -10,8 +10,12 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.gilchen-zion.com" # the base hostname & protocol for your site
 twitter_username: gilcz2
 github_username:  gilchenzion
+google_plus: https://plus.google.com/+GilChenZion
 analytics : "UA-66633509-1"
 permalink: /blog/:year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
