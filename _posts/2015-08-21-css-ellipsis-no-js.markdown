@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Add Ellipsis To Text With Only CSS"
-date:   2015-09-21 00:17:28
+date:   2015-08-21 00:17:28
 categories: life
 ---
 Often times I find ways to overcomplicate simple tasks. One of these task that has stumped me in the past was adding ellipsis to a line of text and adding ellipsis in its place.
