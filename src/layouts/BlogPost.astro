@@ -1,0 +1,35 @@
+---
+import Layout from "./Layout.astro";
+
+interface Props {
+  title: string;
+  date: Date;
+  author?: string;
+  meta?: string;
+}
+
+const { title, date, author, meta } = Astro.props;
+
+const formattedDate = date.toLocaleDateString("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
+---
+
+<Layout title={title}>
+  <div class="post">
+    <header class="post-header">
+      <h1 class="post-title">{title}</h1>
+      <p class="post-meta">
+        {formattedDate}
+        {author && <> • {author}</>}
+        {meta && <> • {meta}</>}
+      </p>
+    </header>
+
+    <article class="post-content">
+      <slot />
+    </article>
+  </div>
+</Layout>
