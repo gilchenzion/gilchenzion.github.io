@@ -32,3 +32,7 @@ Requires Node >= 22.12.0 (see `engines` in `package.json`); the Astro 7 dependen
 ## Deployment
 
 `.github/workflows/deploy.yml` builds and deploys to GitHub Pages on every push to `master` (`npm ci && npm run build`, then `actions/deploy-pages`). The production branch is `master`, not `main`.
+
+## Git workflow
+
+Use a new branch per change (e.g. `claude/<short-description>`) rather than recycling a previous branch name. In particular, never stack new commits on a branch whose PR has already been merged — start a fresh branch from `master` for the next change instead.
