@@ -422,10 +422,6 @@ pre > code {
   background: var(--line-color);
 }
 
-.social-media-list li:nth-child(2)::before {
-  background: var(--line-blue);
-}
-
 .footer-col-wrapper {
   font-size: 15px;
   color: var(--grey-color);
