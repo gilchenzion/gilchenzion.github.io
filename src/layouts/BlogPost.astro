@@ -1,24 +1,29 @@
 ---
 import Layout from "./Layout.astro";
+import { lineFor, colorForPost } from "../lib/subwayLines";
 
 interface Props {
+  id: string;
   title: string;
   date: Date;
+  categories?: string[];
   author?: string;
   meta?: string;
 }
 
-const { title, date, author, meta } = Astro.props;
+const { id, title, date, categories = [], author, meta } = Astro.props;
 
 const formattedDate = date.toLocaleDateString("en-US", {
   month: "short",
   day: "numeric",
   year: "numeric",
 });
+
+const stopColor = colorForPost(id, categories[0]);
 ---
 
 <Layout title={title}>
-  <div class="post">
+  <div class="post" style={`--stop-color: ${stopColor}`}>
     <header class="post-header">
       <h1 class="post-title">{title}</h1>
       <p class="post-meta">
@@ -26,6 +31,23 @@ const formattedDate = date.toLocaleDateString("en-US", {
         {author && <> • {author}</>}
         {meta && <> • {meta}</>}
       </p>
+
+      {categories.length > 0 && (
+        <div class="post-lines">
+          {categories.map((category) => {
+            const line = lineFor(category);
+            return (
+              <span
+                class="bullet"
+                style={`background: ${line.color}`}
+                title={category}
+              >
+                {line.label}
+              </span>
+            );
+          })}
+        </div>
+      )}
     </header>
 
     <article class="post-content">

@@ -3,5 +3,16 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="404">
-  <p>Sorry this page does not exist =(</p>
+  <div class="service-alert">
+    <div class="service-alert-header">Service Change</div>
+    <div class="service-alert-body">
+      <p>
+        <strong>This station is closed.</strong> The page you're looking for
+        doesn't exist, was moved, or never left the platform.
+      </p>
+      <p>
+        <a class="route-button" href="/">Back to the terminal</a>
+      </p>
+    </div>
+  </div>
 </Layout>

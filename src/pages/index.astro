@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import { colorForPost } from "../lib/subwayLines";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -13,13 +14,14 @@ const posts = (await getCollection("blog")).sort(
 
     <ul class="post-list">
       {posts.map((post) => (
-        <li>
+        <li style={`--stop-color: ${colorForPost(post.id, post.data.categories[0])}`}>
           <span class="post-meta">
             {post.data.date.toLocaleDateString("en-US", {
               month: "short",
               day: "numeric",
               year: "numeric",
             })}
+            {post.data.categories.length > 0 && ` · ${post.data.categories[0]}`}
           </span>
 
           <h2>
@@ -32,7 +34,7 @@ const posts = (await getCollection("blog")).sort(
     </ul>
 
     <p class="rss-subscribe">
-      subscribe <a href="/feed.xml">via RSS</a>
+      Subscribe <a href="/feed.xml">via RSS</a>
     </p>
   </div>
 </Layout>
