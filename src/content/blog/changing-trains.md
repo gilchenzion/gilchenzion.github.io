@@ -4,7 +4,7 @@ date: 2026-08-03
 categories: [leadership]
 ---
 
-The last thing I posted here was a note about how to add an ellipsis to a line of text with CSS. That was eleven years ago. It was a fine post — the trick still works — but it isn't what I want this place to be anymore.
+The last thing I posted here was a note about how to add an ellipsis to a line of text with CSS. That was eleven years ago. It was a fine post, and the trick still works, but it isn't what I want this place to be anymore.
 
 Most of what I've learned since then hasn't been about code. It's been about the parts of the job nobody hands you a tutorial for: telling someone their work isn't at the level it needs to be, and doing it in a way they can actually use. Deciding which fire to let burn. Noticing that the technically correct answer and the right answer for the team are sometimes different things, and that a lot of seniority is just the willingness to sit with that gap instead of arguing your way out of it.
 
@@ -19,4 +19,4 @@ So: a new line. What I expect to write about here:
 
 I don't have a cadence in mind. I'd rather post something I've genuinely thought about every few weeks than something on time.
 
-If you've been subscribed since 2015 for the CSS tips — sorry. The feed is still in the same place.
+If you've been subscribed since 2015 for the CSS tips, sorry. The feed is still in the same place.
