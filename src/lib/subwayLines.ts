@@ -8,6 +8,8 @@ export const LINES: Record<string, { color: string; label: string }> = {
   node: { color: "var(--line-dkgreen)", label: "4" },
   php: { color: "var(--line-brown)", label: "J" },
   tesla: { color: "var(--line-red)", label: "1" },
+  leadership: { color: "var(--line-grey)", label: "L" },
+  management: { color: "var(--line-orange)", label: "M" },
   default: { color: "var(--line-teal)", label: "T" },
 };
 
