@@ -1,6 +1,6 @@
 # gilchenzion.github.io
 
-Personal site and blog for Gil Chen-Zion, software engineer at Tesla based in San Francisco. Previously led mission-driven engineering teams in healthtech at Oscar and Thirty Madison. Deployed at [www.gilchen-zion.com](https://www.gilchen-zion.com).
+Personal site and blog for Gil Chen-Zion, who leads engineering teams at Tesla and is based in San Francisco. Writing on engineering leadership, management, and navigating a career in software; previously led mission-driven engineering teams in healthtech at Oscar and Thirty Madison. Deployed at [www.gilchen-zion.com](https://www.gilchen-zion.com).
 
 Built with [Astro](https://astro.build) and deployed to GitHub Pages.
 

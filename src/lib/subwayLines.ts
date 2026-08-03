@@ -1,15 +1,13 @@
 // Maps blog categories to MTA subway line colors + bullet labels,
 // so tags read like actual line indicators (e.g. the G train is green).
 export const LINES: Record<string, { color: string; label: string }> = {
-  life: { color: "var(--line-green)", label: "G" },
-  code: { color: "var(--line-blue)", label: "A" },
-  javascript: { color: "var(--line-yellow)", label: "N" },
-  css: { color: "var(--line-purple)", label: "7" },
-  node: { color: "var(--line-dkgreen)", label: "4" },
-  php: { color: "var(--line-brown)", label: "J" },
-  tesla: { color: "var(--line-red)", label: "1" },
   leadership: { color: "var(--line-grey)", label: "L" },
   management: { color: "var(--line-orange)", label: "M" },
+  career: { color: "var(--line-blue)", label: "A" },
+  teams: { color: "var(--line-green)", label: "G" },
+  hiring: { color: "var(--line-yellow)", label: "N" },
+  craft: { color: "var(--line-purple)", label: "7" },
+  culture: { color: "var(--line-dkgreen)", label: "4" },
   default: { color: "var(--line-teal)", label: "T" },
 };
 
