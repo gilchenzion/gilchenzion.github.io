@@ -15,8 +15,10 @@ const { Content } = await render(post);
 ---
 
 <BlogPost
+  id={post.id}
   title={post.data.title}
   date={post.data.date}
+  categories={post.data.categories}
   author={post.data.author}
   meta={post.data.meta}
 >
