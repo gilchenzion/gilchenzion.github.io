@@ -8,7 +8,7 @@ The last thing I posted here was a note about how to add an ellipsis to a line o
 
 Most of what I've learned since then hasn't been about code. It's been about the parts of the job nobody hands you a tutorial for: telling someone their work isn't at the level it needs to be, and doing it in a way they can actually use. Deciding which fire to let burn. Noticing that the technically correct answer and the right answer for the team are sometimes different things, and that a lot of seniority is just the willingness to sit with that gap instead of arguing your way out of it.
 
-I've led engineering teams in healthtech at Oscar and Thirty Madison, and I'm now an engineer at Tesla. Somewhere in there I stopped measuring my weeks in commits.
+I led engineering teams in healthtech at Oscar and Thirty Madison, and I lead them at Tesla now. Somewhere in there I stopped measuring my weeks in commits.
 
 So: a new line. What I expect to write about here:
 
