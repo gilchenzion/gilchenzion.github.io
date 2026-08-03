@@ -1,5 +1,7 @@
 ---
 import { site } from "../site.config";
+
+const encodedEmail = Buffer.from(site.email, "utf-8").toString("base64");
 ---
 
 <footer class="site-footer">
@@ -10,24 +12,25 @@ import { site } from "../site.config";
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>{site.title}</li>
-          <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
+          <li>
+            <a
+              class="email-link"
+              data-email={encodedEmail}
+              href="#"
+              rel="nofollow"
+            >
+              Email
+            </a>
+          </li>
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          {site.githubUsername && (
+          {site.linkedinUsername && (
             <li>
-              <a href={`https://github.com/${site.githubUsername}`}>
-                <span class="username">GitHub / {site.githubUsername}</span>
-              </a>
-            </li>
-          )}
-
-          {site.twitterUsername && (
-            <li>
-              <a href={`https://twitter.com/${site.twitterUsername}`}>
-                <span class="username">Twitter / {site.twitterUsername}</span>
+              <a href={`https://www.linkedin.com/in/${site.linkedinUsername}`}>
+                <span class="username">LinkedIn / {site.linkedinUsername}</span>
               </a>
             </li>
           )}
@@ -40,3 +43,13 @@ import { site } from "../site.config";
     </div>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>(".email-link").forEach((link) => {
+    const encoded = link.dataset.email;
+    if (!encoded) return;
+    const email = atob(encoded);
+    link.href = `mailto:${email}`;
+    link.textContent = email;
+  });
+</script>
