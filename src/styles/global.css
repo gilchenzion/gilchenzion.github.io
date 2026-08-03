@@ -240,6 +240,10 @@ pre > code {
   gap: 12px;
 }
 
+.brand:hover {
+  background-size: 0 0;
+}
+
 .brand-bullet {
   flex: 0 0 auto;
   display: inline-flex;
