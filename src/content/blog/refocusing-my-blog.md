@@ -1,5 +1,5 @@
 ---
-title: "Changing Trains"
+title: "Refocusing my blog"
 date: 2026-08-03
 categories: [leadership]
 ---
@@ -10,7 +10,7 @@ Most of what I've learned since then hasn't been about code. It's been about the
 
 I led engineering teams in healthtech at Oscar and Thirty Madison, and I lead them at Tesla now. Somewhere in there I stopped measuring my weeks in commits.
 
-So: a new line. What I expect to write about here:
+So I'm changing what this blog is about. What I expect to write here:
 
 - What actually changes when you go from writing the code to being responsible for the people writing it
 - The career decisions that feel small at the time and turn out not to be
